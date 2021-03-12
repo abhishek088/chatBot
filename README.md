@@ -10,3 +10,5 @@ To run the project locally follow the following steps:
 2) git clone <gitLink> .
 3) npm install
 4) node index
+
+A Lice
