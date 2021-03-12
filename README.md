@@ -11,4 +11,6 @@ To run the project locally follow the following steps:
 3) npm install
 4) node index
 
-A Lice
+This project has a MIT License and you can find that above.
+Please find a wiki for this page in the wiki section. 
+A test issue has also been created and a hint to fix it has been added as a comment to the issue.
