@@ -48,11 +48,7 @@ app.post("/payment/:phone", (req, res) => {
 app.get("/payment", (req, res) => {
   // this happens when the user clicks on the link in SMS
   const sFrom = req.params.phone;
-  if (!oOrders.hasOwnProperty(sFrom)) {
-    res.end("order already complete");
-  } else {
-    res.end(oOrders[sFrom].renderForm());
-  }
+  res.end(oOrders[sFrom].renderForm());
 });
 
 app.get("/payment/:phone", (req, res) => {
