@@ -55,10 +55,6 @@ app.get("/payment/:phone", (req, res) => {
   }
 });
 
-app.get("/payment", (req, res) => {
-  res.end(renderForm2());
-});
-
 app.post("/sms", (req, res) => {
   // turn taking SMS
   let sFrom = req.body.From || req.body.from;
