@@ -146,7 +146,7 @@ module.exports = class ShwarmaOrder extends Order{
         <script
           src="https://www.paypal.com/sdk/js?client-id=${sClientID}"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
         </script>
-        Thank you for your order 
+        Thank you ${this.sNumber} for your order $${this.nOrder}. 
         <div id="paypal-button-container"></div>
   
         <script>
