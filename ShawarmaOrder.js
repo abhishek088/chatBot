@@ -206,7 +206,7 @@ module.exports = class ShwarmaOrder extends Order{
                 return actions.order.create({
                   purchase_units: [{
                     amount: {
-                      value: '${this.nOrder}'
+                      value: 21
                     }
                   }]
                 });
