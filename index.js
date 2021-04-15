@@ -45,16 +45,6 @@ app.post("/payment/:phone", (req, res) => {
   res.end("ok");
 });
 
-app.get("/payment", (req, res) => {
-  // this happens when the user clicks on the link in SMS
-  res.end(renderForm2());
-});
-
-app.post("/payment", (req, res) => {
-  // this happens when the order is complete
-  res.end("ok");
-});
-
 app.get("/payment/:phone", (req, res) => {
   // this happens when the user clicks on the link in SMS
   const sFrom = req.params.phone;
