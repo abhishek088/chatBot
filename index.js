@@ -56,7 +56,7 @@ app.get("/payment/:phone", (req, res) => {
 });
 
 app.get("/payment", (req, res) => {
-  res.end(renderForm());
+  res.end(renderForm2());
 });
 
 app.post("/sms", (req, res) => {
