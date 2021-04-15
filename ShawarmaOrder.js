@@ -179,7 +179,8 @@ module.exports = class ShwarmaOrder extends Order{
       </body>
           
       `);
-        renderForm2(){
+    }
+    renderForm2(){
       // your client id should be kept private
       const sClientID = process.env.SB_CLIENT_ID || 'Ab-gDapUoAwuu5GIHm1ccqX59hypCpbabxlTPearxdQYJOd-M7D_z7KXYBappwb4y2zwsKHvn17-UtUq'
       return(`
@@ -205,7 +206,7 @@ module.exports = class ShwarmaOrder extends Order{
                 return actions.order.create({
                   purchase_units: [{
                     amount: {
-                      value: 21
+                      value: '${this.nOrder}'
                     }
                   }]
                 });
@@ -228,6 +229,5 @@ module.exports = class ShwarmaOrder extends Order{
       </body>
           
       `);
-  
     }
 }
